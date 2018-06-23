@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 viewPager.setCurrentItem(mCurrentPage + 1);
-                Intent ob = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(ob);
+                Intent os = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(os);
 
             }
         });
