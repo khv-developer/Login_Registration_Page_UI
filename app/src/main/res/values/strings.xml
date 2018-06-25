@@ -3,5 +3,23 @@
     <string name="imd_desc">Lorem isqum dolor sit amet, consetetur adipiscing elit, sed to eiusmod tempor incididunt ut labore et dolor manga</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="login">LOGIN</string>
+    <string name="remember_me">Remember me</string>
+    <string name="foget_password">Foget Password?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="or_login_with">Or Login With</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="circle_image">circle image</string>
+    <string name="dash">dash</string>
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+    <string name="square_image">square image</string>
+    <string name="dots">dots</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.vivek.petcart;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 viewPager.setCurrentItem(mCurrentPage + 1);
-                Intent os = new Intent(MainActivity.this,LoginActivity.class);
+                Intent os  = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(os);
 
             }
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        @SuppressLint("SetTextI18n")
         @Override
         public void onPageSelected(int position) {
             addDotsIndicator(position);

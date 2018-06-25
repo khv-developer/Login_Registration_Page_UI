@@ -9,8 +9,9 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
@@ -21,7 +22,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,36 +33,229 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:contentDescription="@string/circle_image"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/circle"
                     android:padding="10dp"
                     android:src="@drawable/auth"
-                    android:tint="" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:text="LOGIN"
+                    android:text="@string/login"
                     android:textColor="@color/colorwhite"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-medium"/>
+                    android:fontFamily="sans-serif-medium"
+                    tools:targetApi="jelly_bean" />
             </LinearLayout>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                 android:contentDescription="@string/square_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@drawable/square"
                 android:layout_below="@+id/linear"
-                android:layout_marginTop="-15dp"
+                android:layout_marginTop="-10dp"
                 android:rotation="45"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageview1"/>
 
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/imageview1">
+
+                <ImageView
+                    android:contentDescription="@string/email"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/email"
+                    android:padding="5dp"
+                    android:id="@+id/imageviewuserLogIn"
+                    />
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="@string/email"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageviewuserLogIn"
+                    android:background="@color/editText"
+                    android:layout_alignBottom="@+id/imageviewuserLogIn"
+                    android:textSize="15sp"
+                    android:paddingStart="20dp"
+                    android:layout_toEndOf="@+id/imageviewuserLogIn" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/relative1">
+
+                <ImageView
+                    android:contentDescription="@string/password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/password"
+                    android:padding="5dp"
+                    android:id="@+id/password"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="@string/password"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/password"
+                    android:background="@color/editText"
+                    android:inputType="textPassword"
+                    android:layout_alignBottom="@+id/password"
+                    android:textSize="15sp"
+                    android:paddingStart="20dp"
+                    tools:ignore="RtlSymmetry"
+                    android:layout_toEndOf="@+id/password" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remember_me"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/Textcolor" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foget_password"
+                    android:background="@color/colorTranspent"
+                    android:textColor="@color/Textcolor"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative3"
+                android:background="@color/colorPrimary"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorwhite"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:id="@+id/btn_signin"
+                tools:targetApi="jelly_bean" />
+
+
+            <ImageView
+                android:contentDescription="@string/dash"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/imageview2"
+                android:layerType="software"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/dash"
+                android:layout_below="@id/btn_signin"
+                />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Textcolor"
+                android:layout_below="@id/imageview2"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:text="@string/or_login_with"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+
+                <ImageView
+                    android:contentDescription="@string/facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/facebook"
+                    android:background="@color/fb_blue"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:contentDescription="@string/google"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/google"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/google_red"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp" />
+
+
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/linear2"
+            android:layout_marginTop="30dp"
+            android:id="@+id/signup"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/don_t_have_an_account_sign_up"
+            />
 
         </RelativeLayout>
+
+
     </android.support.v7.widget.CardView>
 
 </RelativeLayout>
