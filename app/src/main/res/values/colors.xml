@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#262938</color>
-    <color name="colorPrimaryDark">#181A24</color>
+    <color name="colorPrimary">#FFC50C</color>
+    <color name="colorPrimaryDark">#E5B009</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorwhite">#ffffff</color>
     <color name="colorTranspentWhite">#cccccc</color>
+    <color name="colorTranspent">#00000000</color>
+    <color name="fb_blue">#3F599E</color>
+    <color name="google_red">#e94f1f</color>
+    <color name="editText">#DADADA</color>
+    <color name="Textcolor">#6e6e6e</color>
+
 </resources>

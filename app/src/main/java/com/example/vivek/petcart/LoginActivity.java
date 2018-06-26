@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent SignUp = new Intent(LoginActivity.this,RegistrationActivity.class);
                 startActivity(SignUp);
+                Toast.makeText(LoginActivity.this, "SignUp", Toast.LENGTH_SHORT).show();
             }
         });
     }
